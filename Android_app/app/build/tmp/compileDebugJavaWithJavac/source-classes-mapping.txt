@@ -1,2 +1,14 @@
 com/source/sportivnyy/BuildConfig.java
  com.source.sportivnyy.BuildConfig
+com/source/sportivnyy/databinding/ContentNavigationDrawerBinding.java
+ com.source.sportivnyy.databinding.ContentNavigationDrawerBinding
+com/source/sportivnyy/databinding/BlankFragmentBinding.java
+ com.source.sportivnyy.databinding.BlankFragmentBinding
+com/source/sportivnyy/databinding/NavHeaderNavigationDrawerBinding.java
+ com.source.sportivnyy.databinding.NavHeaderNavigationDrawerBinding
+com/source/sportivnyy/databinding/ActivitySplashScreenBinding.java
+ com.source.sportivnyy.databinding.ActivitySplashScreenBinding
+com/source/sportivnyy/databinding/ActivityNavigationDrawerBinding.java
+ com.source.sportivnyy.databinding.ActivityNavigationDrawerBinding
+com/source/sportivnyy/databinding/AppBarNavigationDrawerBinding.java
+ com.source.sportivnyy.databinding.AppBarNavigationDrawerBinding

@@ -1,15 +1,63 @@
 [
     {
-        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\layout\\activity_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_app_bar_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\layout\\app_bar_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_blank_fragment.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\layout\\blank_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\menu_activity_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\menu\\activity_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_nav_header_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\layout\\nav_header_navigation_drawer.xml"
+    },
+    {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.jpeg.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\drawable\\logo.jpeg"
     },
     {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.png.flat",
@@ -20,32 +68,24 @@
         "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\anim_splashscreen_anim.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\anim\\splashscreen_anim.xml"
+    },
+    {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_content_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\layout\\content_navigation_drawer.xml"
     },
     {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
@@ -66,10 +106,6 @@
     {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\sfeli\\Documents\\Ciclo4\\CICLO-4-APP-MOVIL\\Android_app\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",

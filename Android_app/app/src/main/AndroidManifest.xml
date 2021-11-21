@@ -11,7 +11,9 @@
         android:theme="@style/Theme.Sportivnyy">
         <activity
             android:name=".view.ui.activities.SplashScreen"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/Theme.Sportivnyy.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,8 +21,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.ui.activities.MainActivity"
-            android:exported="true">
+            android:name=".view.ui.activities.NavigationDrawer"
+            android:exported="true"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/Theme.Sportivnyy.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

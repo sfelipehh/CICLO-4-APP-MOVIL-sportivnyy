@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Sportivnyy</string>
     <string name="splash_screen_logo_info">SplashScreenLogo</string>
+    <string name="menu_blank">Blank</string>
+    <string name="nav_header_img_descr">Image Nav Header</string>
+    <string name="title_activity_navigation_drawer">Navigation Drawer</string>
+    <string name="title_activity_splash_screen">Splash Screen</string>
 </resources>
