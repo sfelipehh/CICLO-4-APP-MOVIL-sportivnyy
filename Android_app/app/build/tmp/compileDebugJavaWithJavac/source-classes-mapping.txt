@@ -1,0 +1,2 @@
+com/source/sportivnyy/BuildConfig.java
+ com.source.sportivnyy.BuildConfig
