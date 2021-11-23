@@ -18,7 +18,7 @@ class SplashScreen : AppCompatActivity() {
         setContentView(view)
         val animation = AnimationUtils.loadAnimation(this,R.anim.splashscreen_anim)
         binding.ivSplashScreen.startAnimation(animation)
-        val intent = Intent(this,MainActivity::class.java)
+        val intent = Intent(this,NavigationDrawer::class.java)
 
         animation.setAnimationListener(object : Animation.AnimationListener{
             override fun onAnimationStart(animation: Animation?) {

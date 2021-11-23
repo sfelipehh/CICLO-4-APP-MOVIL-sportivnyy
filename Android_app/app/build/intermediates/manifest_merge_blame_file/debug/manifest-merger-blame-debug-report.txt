@@ -11,7 +11,7 @@
 9-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:5:5-21:19
+11-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:5:5-56:19
 12        android:allowBackup="true"
 12-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,44 +29,111 @@
 20        android:theme="@style/Theme.Sportivnyy" >
 20-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:11:9-48
 21        <activity
-21-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:12:9-20:20
-22            android:name="com.source.sportivnyy.view.ui.activities.MainActivity"
-22-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:13:13-60
-23            android:exported="true" >
+21-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:12:9-22:20
+22            android:name="com.source.sportivnyy.view.ui.activities.LoginActivity"
+22-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:13:13-61
+23            android:exported="true"
 23-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:14:13-36
-24            <intent-filter>
-24-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:15:13-19:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:16:17-69
-25-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:16:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:17-77
-27-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:27-74
-28            </intent-filter>
-29        </activity>
-30
-31        <provider
-31-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-32            android:name="androidx.startup.InitializationProvider"
-32-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-33            android:authorities="com.source.sportivnyy.androidx-startup"
-33-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-34            android:exported="false" >
-34-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-35            <meta-data
-35-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-36                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-36-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-37                android:value="androidx.startup" />
-37-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-38            <meta-data
-38-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sfeli\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-39                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sfeli\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-40                android:value="androidx.startup" />
-40-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sfeli\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-41        </provider>
-42    </application>
-43
-44</manifest>
+24            android:label="@string/title_login_activity"
+24-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:15:13-57
+25            android:theme="@style/Theme.Sportivnyy" >
+25-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:16:13-52
+26            <intent-filter>
+26-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:17:13-21:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:17-69
+27-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:17-77
+29-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:27-74
+30            </intent-filter>
+31        </activity>
+32        <activity
+32-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:23:9-33:20
+33            android:name="com.source.sportivnyy.view.ui.activities.SplashScreen"
+33-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:24:13-60
+34            android:exported="true"
+34-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:25:13-36
+35            android:label="@string/title_activity_splash_screen"
+35-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:26:13-65
+36            android:theme="@style/Theme.Sportivnyy.NoActionBar" >
+36-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:27:13-64
+37            <intent-filter>
+37-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:17:13-21:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:17-69
+38-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:17-77
+40-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:34:9-44:20
+44            android:name="com.source.sportivnyy.view.ui.activities.NavigationDrawer"
+44-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:35:13-64
+45            android:exported="true"
+45-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:36:13-36
+46            android:label="@string/title_activity_navigation_drawer"
+46-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:37:13-69
+47            android:theme="@style/Theme.Sportivnyy.NoActionBar" >
+47-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:38:13-64
+48            <intent-filter>
+48-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:17:13-21:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:17-69
+49-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:17-77
+51-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:27-74
+52            </intent-filter>
+53        </activity>
+54        <activity
+54-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:45:9-55:20
+55            android:name="com.source.sportivnyy.view.ui.activities.FacturacionActivity"
+55-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:46:13-67
+56            android:exported="true"
+56-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:47:13-36
+57            android:label="@string/title_facturacion_fragment"
+57-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:48:13-63
+58            android:theme="@style/Theme.Sportivnyy" >
+58-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:49:13-52
+59            <intent-filter>
+59-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:17:13-21:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:17-69
+60-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:18:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:17-77
+62-->C:\Users\sfeli\Documents\Ciclo4\CICLO-4-APP-MOVIL\Android_app\app\src\main\AndroidManifest.xml:20:27-74
+63            </intent-filter>
+64        </activity>
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+68            android:authorities="com.source.sportivnyy.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.0.0] C:\Users\sfeli\.gradle\caches\transforms-3\0c8b21db498ae6b6ba22706b7f0dbd1b\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+73            <meta-data
+73-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sfeli\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+74                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+74-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sfeli\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+75                android:value="androidx.startup" />
+75-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\sfeli\.gradle\caches\transforms-3\a889c36c21c1e2bc116f811fb6c47330\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+76        </provider>
+77    </application>
+78
+79</manifest>
