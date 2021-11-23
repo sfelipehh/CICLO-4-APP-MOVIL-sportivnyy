@@ -5,4 +5,26 @@
     <string name="nav_header_img_descr">Image Nav Header</string>
     <string name="title_activity_navigation_drawer">Navigation Drawer</string>
     <string name="title_activity_splash_screen">Splash Screen</string>
+    <string name="menu_to_account">ToAccount</string>
+    <string name="menu_to_shopping_cart">ToShoppingCart</string>
+    <string name="title_shopping_cart">Productos en el carrito</string>
+    <string name="image_producto">ImageProducto</string>
+    <string name="nombre_producto">NombreProducto</string>
+    <string name="descrpcion_producto">DescrpcionProducto</string>
+    <string name="precio_producto">1000$</string>
+    <string name="continuar_con_la_compra">Continuar con la compra</string>
+    <string name="test_subtotal">Subtotal: $0.00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_facturacion_fragment">Facturación</string>
+    <string name="subtitle_producto">Producto(s)</string>
+    <string name="subtitle_precio">Precio</string>
+    <string name="valor_iva">Valor IVA</string>
+    <string name="subtotal_mas_iva">Total : Subtotal + IVA</string>
+    <string name="finalizar_compra">Finalizar Compra</string>
+    <string name="title_login_activity">Inicio de sesión</string>
+    <string name="action_sign_in">Ingresar o Registrarse</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="prompt_email">Correo Electronico</string>
 </resources>

@@ -7,7 +7,7 @@
         <item
             android:id="@+id/nav_blank"
             android:title="@string/menu_blank"
-            android:icon="@drawable/ic_launcher_foreground"/>
+            android:icon="@drawable/ic_baseline_home_24" />
 
     </group>
 

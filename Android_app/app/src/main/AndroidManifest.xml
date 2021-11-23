@@ -10,10 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sportivnyy">
         <activity
+            android:name=".view.ui.activities.LoginActivity"
+            android:exported="true"
+            android:label="@string/title_login_activity"
+            android:theme="@style/Theme.Sportivnyy">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".view.ui.activities.SplashScreen"
             android:exported="true"
             android:label="@string/title_activity_splash_screen"
-            android:theme="@style/Theme.Sportivnyy.NoActionBar" >
+            android:theme="@style/Theme.Sportivnyy.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +35,18 @@
             android:name=".view.ui.activities.NavigationDrawer"
             android:exported="true"
             android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/Theme.Sportivnyy.NoActionBar" >
+            android:theme="@style/Theme.Sportivnyy.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.ui.activities.FacturacionActivity"
+            android:exported="true"
+            android:label="@string/title_facturacion_fragment"
+            android:theme="@style/Theme.Sportivnyy">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

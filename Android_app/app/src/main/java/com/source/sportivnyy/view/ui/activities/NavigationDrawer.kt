@@ -3,6 +3,7 @@ package com.source.sportivnyy.view.ui.activities
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -23,7 +24,7 @@ class NavigationDrawer : AppCompatActivity() {
         binding = ActivityNavigationDrawerBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-        setSupportActionBar(binding.appBarNavigationDrawer.toolbar)
+        setSupportActionBar(binding.appBarNavigationDrawer.toolbarNavigation)
 
         val drawerLayout : DrawerLayout = binding.drawerLayout
         val navView : NavigationView = binding.navView
@@ -38,7 +39,22 @@ class NavigationDrawer : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.toolbar_menu, menu)
+        return true
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val navController = findNavController(R.id.nav_host_fragment_content_navigation_drawer)
+        return when(item.itemId){
+            R.id.to_shopping_cart->{
+                navController.navigate(R.id.to_shopping_cart)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_navigation_drawer)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()

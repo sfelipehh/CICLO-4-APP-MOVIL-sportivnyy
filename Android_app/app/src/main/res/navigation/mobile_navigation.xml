@@ -9,6 +9,11 @@
         android:name="com.source.sportivnyy.view.ui.fragments.BlankFragment"
         android:label="@string/menu_blank"
         tools:layout="@layout/blank_fragment"/>
+    <fragment
+        android:id="@+id/to_shopping_cart"
+        android:name="com.source.sportivnyy.view.ui.fragments.shopping_cart.ShoppingCartFragment"
+        android:label="shopping_cart_fragment"
+        tools:layout="@layout/shopping_cart_fragment" />
 
 
 </navigation>
