@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Sportivnyy">
+
+    <PreferenceCategory app:title="@string/account_header" android:theme="@style/Theme.Sportivnyy">
+
+        <EditTextPreference
+            app:key="metodo_pago"
+            app:title="@string/metodo_pago_title"
+            app:useSimpleSummaryProvider="true"
+            android:theme="@style/Theme.Sportivnyy"/>
+
+        <ListPreference
+            app:defaultValue="todas"
+            app:entries="@array/notification_entries"
+            app:entryValues="@array/notification_values"
+            app:key="todas"
+            app:title="@string/notification_title"
+            app:useSimpleSummaryProvider="true"
+            android:theme="@style/Theme.Sportivnyy"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header" android:theme="@style/Theme.Sportivnyy">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title"
+            android:theme="@style/Theme.Sportivnyy"/>
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title"
+            android:theme="@style/Theme.Sportivnyy"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

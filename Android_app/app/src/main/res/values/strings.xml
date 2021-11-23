@@ -27,4 +27,19 @@
     <string name="prompt_password">Contraseña</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="prompt_email">Correo Electronico</string>
+    <!-- Preference Titles -->
+    <string name="account_header">Cuenta</string>
+    <string name="sync_header">Sincronozación</string>
+
+    <!-- Messages Preferences -->
+    <string name="metodo_pago_title">Metodo de pago</string>
+    <string name="notification_title">Envio de notificaciónes por defecto</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sincronizar email registrado</string>
+    <string name="attachment_title">Sincronización automatica</string>
+    <string name="attachment_summary_on">Sincronizar correo sin acción manual
+    </string>
+    <string name="attachment_summary_off">Sincronizar correo manualmente (solo recordatorio)</string>
+    <string name="settings">Configuración</string>
 </resources>
