@@ -11,10 +11,10 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.source.sportivnyy.R
-import com.source.sportivnyy.model.data.ProductoInCarrito
+import com.source.sportivnyy.model.data.Producto
 
 class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onClickTrash:()-> Unit):
-    ListAdapter<ProductoInCarrito,ShoppingCartItemAdapter.ItemInCarritoViewHolder>(ItemInCarritoDiffCallback){
+    ListAdapter<Producto,ShoppingCartItemAdapter.ItemInCarritoViewHolder>(ItemInCarritoDiffCallback){
 
         class ItemInCarritoViewHolder(itemView:View, val onClickView:()->Unit,val onClickTrash:()->Unit):
                 RecyclerView.ViewHolder(itemView){
@@ -23,7 +23,7 @@ class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onC
                     private val producto_in_carrrito_DescripcionView:TextView = itemView.findViewById(R.id.tvDescripcion_Producto_In_Carrito)
                     private val producto_in_carrrito_PrecioView:TextView = itemView.findViewById(R.id.tvPrecio_Producto_In_Carrito)
                     private val product_to_trash_button:ImageButton = itemView.findViewById(R.id.product_to_trash_button)
-                    private var current_producto:ProductoInCarrito? = null
+                    private var current_producto:Producto? = null
                     //añade el evento cuando se toca el item
                     init {
                         itemView.setOnClickListener{
@@ -38,13 +38,13 @@ class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onC
                     }
                     //Colocar informacion en las vistas
                     @SuppressLint("SetTextI18n")
-                    fun bind(item_in_carrito:ProductoInCarrito){
-                        current_producto=item_in_carrito
-                        producto_in_carrito_NombreView.text=item_in_carrito.name
-                        producto_in_carrrito_DescripcionView.text=item_in_carrito.descripcion
-                        producto_in_carrrito_PrecioView.text="${item_in_carrito.precio.toString()}$"
+                    fun bind(item:Producto){
+                        current_producto=item
+                        producto_in_carrito_NombreView.text=item.name
+                        producto_in_carrrito_DescripcionView.text=item.descripcion
+                        producto_in_carrrito_PrecioView.text="${item.precio.toString()}$"
 
-                        if (item_in_carrito.image != null){
+                        if (item.image != null){
                                 //TODO.Not yet implemented
                                 producto_in_carrito_ImageView.setImageResource(R.drawable.ic_baseline_shopping_bag_48)
                         }else{
@@ -67,12 +67,12 @@ class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onC
 
 }
 
-object ItemInCarritoDiffCallback:DiffUtil.ItemCallback<ProductoInCarrito>(){
-    override fun areItemsTheSame(oldItem: ProductoInCarrito, newItem: ProductoInCarrito): Boolean {
+object ItemInCarritoDiffCallback:DiffUtil.ItemCallback<Producto>(){
+    override fun areItemsTheSame(oldItem: Producto, newItem: Producto): Boolean {
         return oldItem==newItem
     }
 
-    override fun areContentsTheSame(oldItem: ProductoInCarrito, newItem: ProductoInCarrito): Boolean {
+    override fun areContentsTheSame(oldItem: Producto, newItem: Producto): Boolean {
         return oldItem.id == newItem.id
     }
 }

@@ -8,7 +8,7 @@
     tools:context=".view.ui.activities.LoginActivity">
     <EditText
         android:id="@+id/username"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:hint="@string/prompt_email"
@@ -21,7 +21,7 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="@string/prompt_password"

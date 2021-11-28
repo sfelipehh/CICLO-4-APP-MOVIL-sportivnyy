@@ -2,7 +2,7 @@ package com.source.sportivnyy.model.data
 
 import androidx.annotation.DrawableRes
 
-data class ProductoInCarrito (
+data class Producto (
     val id:Long,
     val name:String,
     @DrawableRes

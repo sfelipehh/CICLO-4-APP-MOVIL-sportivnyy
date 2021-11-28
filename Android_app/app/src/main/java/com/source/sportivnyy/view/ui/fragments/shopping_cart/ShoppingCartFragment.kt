@@ -10,10 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.source.sportivnyy.R
 import com.source.sportivnyy.databinding.ShoppingCartFragmentBinding
-import com.source.sportivnyy.model.data.ProductoInCarrito
+import com.source.sportivnyy.model.data.Producto
 import com.source.sportivnyy.view.ui.activities.FacturacionActivity
 import com.source.sportivnyy.viewmodel.ShoppingCartViewModel
 
@@ -67,12 +66,12 @@ class   ShoppingCartFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this,ShoppingCartViewModel.
-        ShoppinCartViewModelFactory(requireContext()))
+        ShoppingCartViewModelFactory(requireContext()))
             .get(ShoppingCartViewModel::class.java)
         viewModel.productos_in_carritoLiveData.observe(viewLifecycleOwner,
             {
                 it?.let {
-                    productosInCarritoAdapter.submitList(it as MutableList<ProductoInCarrito>)
+                    productosInCarritoAdapter.submitList(it as MutableList<Producto>)
 
                 }
             }
@@ -86,7 +85,6 @@ class   ShoppingCartFragment : Fragment() {
             "Ha hecho click en un producto de su carrito",
             Toast.LENGTH_LONG
         ).show()
-
     }
     private fun adapterTrashOnClick(){
         //TODO.Not yet implemented

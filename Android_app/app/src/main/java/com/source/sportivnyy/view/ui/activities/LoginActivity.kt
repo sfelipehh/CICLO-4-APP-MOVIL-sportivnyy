@@ -4,11 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.inputmethod.EditorInfo
 import com.google.android.material.snackbar.Snackbar
-import com.source.sportivnyy.R
 import com.source.sportivnyy.databinding.ActivityLoginBinding
-import kotlinx.coroutines.delay
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
@@ -18,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val intent = Intent(this,NavigationDrawer::class.java)
+        val intent = Intent(this, NavigationDrawer::class.java)
 
         val username = binding.username
         val password = binding.password

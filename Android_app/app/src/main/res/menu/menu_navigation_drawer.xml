@@ -5,8 +5,8 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_blank"
-            android:title="@string/menu_blank"
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home"
             android:icon="@drawable/ic_baseline_home_24" />
         <item
             android:id="@+id/settingsFragment"

@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation.xml"
-    app:startDestination="@+id/nav_blank">
+    app:startDestination="@+id/nav_home">
     <fragment
-        android:id="@+id/nav_blank"
-        android:name="com.source.sportivnyy.view.ui.fragments.BlankFragment"
+        android:id="@+id/nav_home"
+        android:name="com.source.sportivnyy.view.ui.fragments.HomeFragment"
         android:label="@string/menu_blank"
-        tools:layout="@layout/blank_fragment"/>
+        tools:layout="@layout/home_fragment"/>
     <fragment
         android:id="@+id/to_shopping_cart"
         android:name="com.source.sportivnyy.view.ui.fragments.shopping_cart.ShoppingCartFragment"

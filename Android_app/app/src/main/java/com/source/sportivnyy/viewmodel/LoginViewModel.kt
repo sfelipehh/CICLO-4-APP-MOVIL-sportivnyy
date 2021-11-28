@@ -1,4 +1,4 @@
-package com.source.sportivnyy.view.ui.activities
+package com.source.sportivnyy.viewmodel
 
 import androidx.lifecycle.ViewModel
 

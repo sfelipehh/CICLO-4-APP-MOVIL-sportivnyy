@@ -3,41 +3,41 @@ package com.source.sportivnyy.model.data.repository
 import android.content.res.Resources
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.source.sportivnyy.model.data.ProductoInCarrito
+import com.source.sportivnyy.model.data.Producto
 //Thanks to: https://github.com/android/views-widgets-samples
-class ProductosInCarritoDataSource(resources: Resources) {
+class ProductosDataSource(resources: Resources) {
     private val initialProductosList=productosList(resources)
     private val productos_in_carritoLiveData=MutableLiveData(initialProductosList)
 
     /* Adds Producto to liveData and posts value. */
-    fun addProductoToCarrito(productoInCarrito: ProductoInCarrito) {
+    fun addProductoToCarrito(producto: Producto) {
         val currentList = productos_in_carritoLiveData.value
         if (currentList == null) {
-            productos_in_carritoLiveData.postValue(listOf(productoInCarrito))
+            productos_in_carritoLiveData.postValue(listOf(producto))
         } else {
             val updatedList = currentList.toMutableList()
-            updatedList.add(0, productoInCarrito)
+            updatedList.add(0, producto)
             productos_in_carritoLiveData.postValue(updatedList)
         }
     }
 
     /* Removes Producto from liveData and posts value. */
-    fun removeProductoFromCarrito(productoInCarrito: ProductoInCarrito) {
+    fun removeProductoFromCarrito(producto: Producto) {
         val currentList = productos_in_carritoLiveData.value
         if (currentList != null) {
             val updatedList = currentList.toMutableList()
-            updatedList.remove(productoInCarrito)
+            updatedList.remove(producto)
             productos_in_carritoLiveData.postValue(updatedList)
         }
     }
     /* Returns Producto given an ID. */
-    fun getProductoForId(id: Long): ProductoInCarrito? {
+    fun getProductoForId(id: Long): Producto? {
         productos_in_carritoLiveData.value?.let { prductoInCarrito ->
             return prductoInCarrito.firstOrNull{ it.id == id}
         }
         return null
     }
-    fun getProductosInCarritoList():LiveData<List<ProductoInCarrito>>{
+    fun getProductosList():LiveData<List<Producto>>{
         return productos_in_carritoLiveData
     }
 
@@ -47,13 +47,20 @@ class ProductosInCarritoDataSource(resources: Resources) {
         return initialProductosList[randomNumber].image
     }
     companion object{
-        private var INSTANCE:ProductosInCarritoDataSource?=null
+        private var INSTANCE:ProductosDataSource?=null
 
-        fun getProductosInCarritoDataSource(resources: Resources):ProductosInCarritoDataSource{
-            return synchronized(ProductosInCarritoDataSource::class){
-                val newIntance = INSTANCE?: ProductosInCarritoDataSource(resources)
-                INSTANCE=newIntance
-                newIntance
+        fun getProductosInCarritoDataSource(resources: Resources):ProductosDataSource{
+            return synchronized(ProductosDataSource::class){
+                val newInstance = INSTANCE?: ProductosDataSource(resources)
+                INSTANCE=newInstance
+                newInstance
+            }
+        }
+        fun getProductosDataSource(resources: Resources):ProductosDataSource{
+            return synchronized(ProductosDataSource::class.java) {
+                val newInstante = INSTANCE ?: ProductosDataSource(resources)
+                INSTANCE = newInstante
+                newInstante
             }
         }
     }

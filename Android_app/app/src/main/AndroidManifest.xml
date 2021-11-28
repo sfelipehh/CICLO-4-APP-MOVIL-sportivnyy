@@ -11,6 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sportivnyy">
         <activity
+            android:name=".view.ui.activities.DetailProductoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Sportivnyy.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.EMBED"/>
+            </intent-filter>
+        </activity>
+
+        <activity
             android:name=".view.ui.activities.LoginActivity"
             android:exported="true"
             android:label="@string/title_login_activity"
