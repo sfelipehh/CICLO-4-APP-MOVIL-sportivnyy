@@ -60,8 +60,6 @@ class   ShoppingCartFragment : Fragment() {
             requireActivity().startActivity(intentFacturacion)
         }
 
-
-
     }
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)

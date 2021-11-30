@@ -30,7 +30,7 @@
 
     <!-- Preference Titles -->
     <string name="account_header">Cuenta</string>
-    <string name="sync_header">Sincronozación</string>
+    <string name="sync_header">Sincronización</string>
 
     <!-- Messages Preferences -->
     <string name="metodo_pago_title">Metodo de pago</string>
@@ -67,4 +67,12 @@ Pellentesque nec semper odio, eget rhoncus nunc. Sed malesuada elementum ferment
 
 Phasellus vel ultricies ex. Integer justo nulla, rhoncus at diam a, suscipit vestibulum odio. Donec sapien neque, condimentum id dui sit amet, cursus consectetur lorem. Proin egestas mollis nunc, quis luctus magna fermentum sit amet. Fusce ut pharetra elit. Suspendisse neque dui, fermentum a lorem a, pulvinar tristique erat. Aenean tincidunt nisi nec mattis mollis. Nulla bibendum ac nunc vel sollicitudin. Etiam vitae mi vitae nisi egestas tincidunt id at mauris. Maecenas ornare orci quis nisi scelerisque ultricies. Integer vel ante congue, facilisis ligula vel, blandit nisi. Praesent in nibh venenatis, volutpat ante at, vulputate purus. Cras consequat metus sodales risus luctus tempus. "</string>
     <string name="add_to_cart">Agregar al carrito</string>
+    <string name="comment_author_name">Comentador</string>
+    <string name="date_comentario">Fecha del comentario</string>
+    <string name="text_commentario">Cometario</string>
+    <string name="title_descripcion_producto">Descripción</string>
+    <string name="test_text_medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at diam odio. Nam est mauris, pharetra quis efficitur nec, pretium et metus. Suspendisse tristique posuere est et facilisis. Morbi lorem magna, ultricies elementum egestas eleifend, feugiat ut ex. Vestibulum sagittis placerat porttitor. Curabitur dictum sagittis lectus vel cursus. Curabitur ultricies tristique tempus. Nulla eget purus ut ligula laoreet luctus. Phasellus maximus mattis lobortis. Fusce at massa turpis. Nam gravida commodo urna, ut lacinia nunc tincidunt id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at cursus enim. Nunc dapibus pretium leo in blandit. Sed tincidunt sed felis ac vestibulum. Ut finibus, mauris nec dignissim dapibus, diam sapien aliquet magna, et lobortis metus turpis ut nisi.</string>
+    <string name="direct_buy">Comprar</string>
+    <string name="title_comment">Comentarios</string>
+    <string name="maps_shops">Tiendas cercanas</string>
 </resources>

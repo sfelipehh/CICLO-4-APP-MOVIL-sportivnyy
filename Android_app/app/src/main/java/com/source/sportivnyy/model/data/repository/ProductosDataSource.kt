@@ -32,8 +32,8 @@ class ProductosDataSource(resources: Resources) {
     }
     /* Returns Producto given an ID. */
     fun getProductoForId(id: Long): Producto? {
-        productos_in_carritoLiveData.value?.let { prductoInCarrito ->
-            return prductoInCarrito.firstOrNull{ it.id == id}
+        productos_in_carritoLiveData.value?.let { productoInCarrito ->
+            return productoInCarrito.firstOrNull{ it.id == id}
         }
         return null
     }
@@ -41,8 +41,8 @@ class ProductosDataSource(resources: Resources) {
         return productos_in_carritoLiveData
     }
 
-    /* Returns a random flower asset for flowers that are added. */
-    fun getRandomProductoImageAsset(): Int? {
+    /* Returns a random image asset for productos that are added. */
+    fun getRandomProductoImageAsset(): Int {
         val randomNumber = (initialProductosList.indices).random()
         return initialProductosList[randomNumber].image
     }

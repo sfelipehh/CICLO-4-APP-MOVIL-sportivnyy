@@ -18,6 +18,11 @@
         android:id="@+id/settingsFragment"
         android:name="com.source.sportivnyy.view.ui.fragments.settings.SettingsFragment"
         android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.source.sportivnyy.view.ui.fragments.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
 
 
 </navigation>

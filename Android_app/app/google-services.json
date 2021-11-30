@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "416345379812",
+    "project_id": "sportivnyy-bad4b",
+    "storage_bucket": "sportivnyy-bad4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416345379812:android:e81a0e260c6334807fedf1",
+        "android_client_info": {
+          "package_name": "com.source.sportivnyy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416345379812-9iu1fo570gh439isseblgjv2qot18rip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.source.sportivnyy",
+            "certificate_hash": "c6394e877ab95addcf6822e7e21a2d6d38cdadc4"
+          }
+        },
+        {
+          "client_id": "416345379812-94mk6o5o5oi0p2obvpqopr0atii2gh9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSf2jAEMTHNVWuc_1f4VqYdaTnbGwKCSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416345379812-94mk6o5o5oi0p2obvpqopr0atii2gh9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
