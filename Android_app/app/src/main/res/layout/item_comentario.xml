@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        android:layout_margin="15dp"
+        android:gravity="center">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/comment_author_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_account_circle_24_black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/comment_author_name"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                android:textStyle="bold"
+                android:text="@string/comment_author_name"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toEndOf="@+id/comment_author_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/comment_rate_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:numStars="5"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:isIndicator="true"
+                android:stepSize="1"
+                app:layout_constraintStart_toEndOf="@+id/comment_author_image"
+                app:layout_constraintTop_toBottomOf="@+id/comment_author_name" />
+
+            <TextView
+                android:id="@+id/comment_date"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/date_comentario"
+                android:textAlignment="textStart"
+                app:layout_constraintStart_toEndOf="@+id/comment_author_image"
+                app:layout_constraintTop_toBottomOf="@+id/comment_rate_bar" />
+
+            <TextView
+                android:id="@+id/comment_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/text_commentario"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/comment_date" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,18 +1,15 @@
 package com.source.sportivnyy.viewmodel
 
 import android.content.Context
-import androidx.lifecycle.HasDefaultViewModelProviderFactory
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.source.sportivnyy.model.data.ProductoInCarrito
-import com.source.sportivnyy.model.data.repository.ProductosInCarritoDataSource
-import kotlinx.coroutines.currentCoroutineContext
-import kotlinx.coroutines.withContext
+import com.source.sportivnyy.model.data.Producto
+import com.source.sportivnyy.model.data.repository.ProductosDataSource
 import java.lang.IllegalArgumentException
 import kotlin.random.Random
 
-class ShoppingCartViewModel(val datasource: ProductosInCarritoDataSource) : ViewModel() {
-    val productos_in_carritoLiveData = datasource.getProductosInCarritoList()
+class ShoppingCartViewModel(val datasource: ProductosDataSource) : ViewModel() {
+    val productos_in_carritoLiveData = datasource.getProductosList()
 
     /* Para  crear un nuevo ProductoInCarrito y lo añade al DataSource*/
     fun insertProductoInCarrito(productoName:String?,productoDescripcion:String?,productoPrecio:Long?){
@@ -21,7 +18,7 @@ class ShoppingCartViewModel(val datasource: ProductosInCarritoDataSource) : View
         }
 
         val image = datasource.getRandomProductoImageAsset()
-        val newProducto = ProductoInCarrito(
+        val newProducto = Producto(
             Random.nextLong(),
             productoName,
             image,
@@ -31,13 +28,13 @@ class ShoppingCartViewModel(val datasource: ProductosInCarritoDataSource) : View
         datasource.addProductoToCarrito(newProducto)
     }
 
-    class ShoppinCartViewModelFactory(private val context:Context):ViewModelProvider.Factory{
+    class ShoppingCartViewModelFactory(private val context:Context):ViewModelProvider.Factory{
 
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
             if(modelClass.isAssignableFrom(ShoppingCartViewModel::class.java)){
                 @Suppress("UNCHEKED_CAST")
                 return ShoppingCartViewModel(
-                    datasource = ProductosInCarritoDataSource.getProductosInCarritoDataSource(context.resources)
+                    datasource = ProductosDataSource.getProductosInCarritoDataSource(context.resources)
                 ) as T
             }
             throw IllegalArgumentException("Unknonw ViewModel class")

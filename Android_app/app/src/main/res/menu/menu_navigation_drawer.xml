@@ -5,13 +5,17 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_blank"
-            android:title="@string/menu_blank"
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home"
             android:icon="@drawable/ic_baseline_home_24" />
         <item
             android:id="@+id/settingsFragment"
             android:title="@string/settings"
             android:icon="@drawable/ic_baseline_settings_36"/>
+        <item
+            android:id="@+id/mapsFragment"
+            android:title="@string/maps_shops"
+            android:icon="@drawable/ic_baseline_store_24"/>
     </group>
 
 </menu>

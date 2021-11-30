@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Toast
+import com.google.firebase.FirebaseApp
 import com.source.sportivnyy.R
 import com.source.sportivnyy.databinding.ActivitySplashScreenBinding
 
@@ -18,8 +19,8 @@ class SplashScreen : AppCompatActivity() {
         setContentView(view)
         val animation = AnimationUtils.loadAnimation(this,R.anim.splashscreen_anim)
         binding.ivSplashScreen.startAnimation(animation)
-        val intent = Intent(this,LoginActivity::class.java)
-
+        val intent = Intent(this, LoginActivity::class.java)
+        FirebaseApp.initializeApp(applicationContext)
         animation.setAnimationListener(object : Animation.AnimationListener{
             override fun onAnimationStart(animation: Animation?) {
                 Toast.makeText(

@@ -15,7 +15,8 @@ import com.source.sportivnyy.databinding.ActivityFacturacionBinding
 
 
 class FacturacionActivity : AppCompatActivity() {
-    // TODO: Rename and change types of parameters
+
+
     private lateinit var binding:ActivityFacturacionBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,6 @@ class FacturacionActivity : AppCompatActivity() {
 
     }
     private fun facturacion(iva:Float,precioProductos:Set<Float>,){
-
+        //TODO.Not yet implemented
     }
 }
