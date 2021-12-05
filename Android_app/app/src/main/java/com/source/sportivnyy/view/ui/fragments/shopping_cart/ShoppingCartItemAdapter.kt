@@ -1,6 +1,7 @@
 package com.source.sportivnyy.view.ui.fragments.shopping_cart
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,12 +12,18 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.source.sportivnyy.R
+import com.source.sportivnyy.model.data.Carrito
 import com.source.sportivnyy.model.data.Producto
+import com.source.sportivnyy.model.network.CallbackCarrito
+import com.source.sportivnyy.model.network.FirebaseServices
+import com.source.sportivnyy.model.network.PRODUCTOS_COLLECTION_NAME
+import com.squareup.picasso.Picasso
+import java.lang.Exception
 
-class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onClickTrash:()-> Unit):
-    ListAdapter<Producto,ShoppingCartItemAdapter.ItemInCarritoViewHolder>(ItemInCarritoDiffCallback){
-
-        class ItemInCarritoViewHolder(itemView:View, val onClickView:()->Unit,val onClickTrash:()->Unit):
+class ShoppingCartItemAdapter(private val onClickView:(Producto)-> Unit, private val onClickTrash:(Producto)-> Unit):
+    RecyclerView.Adapter<ShoppingCartItemAdapter.ItemInCarritoViewHolder>(){
+        var carrito = ArrayList<Producto>()
+        class ItemInCarritoViewHolder(itemView:View, val onClickView:(Producto)->Unit,val onClickTrash:(Producto)->Unit):
                 RecyclerView.ViewHolder(itemView){
                     private val producto_in_carrito_ImageView:ImageView = itemView.findViewById(R.id.ivProducto_In_Carrito)
                     private val producto_in_carrito_NombreView:TextView = itemView.findViewById(R.id.tvNombre_Producto_In_Carrito)
@@ -27,12 +34,15 @@ class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onC
                     //añade el evento cuando se toca el item
                     init {
                         itemView.setOnClickListener{
-                            onClickView()
+                            current_producto?.let { onClickView(it) }
+
 
                         }
                         product_to_trash_button.setOnClickListener {
                             //Para saber que hacer cuando oprima el boton de eliminar
-                                onClickTrash()
+                                current_producto?.let{
+                                    onClickTrash(it)
+                                }
 
                         }
                     }
@@ -41,16 +51,16 @@ class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onC
                     fun bind(item:Producto){
                         current_producto=item
                         producto_in_carrito_NombreView.text=item.name
-                        producto_in_carrrito_DescripcionView.text=item.descripcion
+                        producto_in_carrrito_DescripcionView.text=item.resume_descripcion
                         producto_in_carrrito_PrecioView.text="${item.precio.toString()}$"
-
-                        if (item.image != null){
+                        //R.dimen.image_in_carrito_size=100dp // 100px
+                        if (item.imgurl != "ninguna"){
                                 //TODO.Not yet implemented
-                                producto_in_carrito_ImageView.setImageResource(R.drawable.ic_baseline_shopping_bag_48)
+                                Picasso.get().load(item.imgurl).resize(100,100)
+                                    .into(producto_in_carrito_ImageView)
                         }else{
                             producto_in_carrito_ImageView.setImageResource(R.drawable.ic_baseline_shopping_bag_48)
                         }
-
                     }
                 }
 
@@ -61,18 +71,16 @@ class ShoppingCartItemAdapter(private val onClickView:()-> Unit, private val onC
     }
 
     override fun onBindViewHolder(holder: ItemInCarritoViewHolder, position: Int) {
-        val producto_in_carrito = getItem(position)
-        holder.bind(producto_in_carrito)
+        val producto_in_carrito = carrito.get(position+1)
+        holder.bind(producto_in_carrito!!)
     }
 
-}
-
-object ItemInCarritoDiffCallback:DiffUtil.ItemCallback<Producto>(){
-    override fun areItemsTheSame(oldItem: Producto, newItem: Producto): Boolean {
-        return oldItem==newItem
+    override fun getItemCount(): Int {
+        return carrito.size - 1
     }
-
-    override fun areContentsTheSame(oldItem: Producto, newItem: Producto): Boolean {
-        return oldItem.id == newItem.id
+    fun updateData(data:List<Producto>){
+        carrito.clear()
+        carrito.addAll(data)
+        notifyDataSetChanged()
     }
 }

@@ -1,24 +1,34 @@
 package com.source.sportivnyy.viewmodel
 
-import android.content.Context
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
-import com.source.sportivnyy.model.data.repository.ProductosDataSource
-import java.lang.IllegalArgumentException
+import com.google.firebase.firestore.DocumentReference
+import com.source.sportivnyy.model.data.Producto
+import com.source.sportivnyy.model.network.CallbackProductos
+import com.source.sportivnyy.model.network.FirebaseServices
+import java.lang.Exception
 
-class HomeViewModel(val datasource: ProductosDataSource) : ViewModel() {
-    val productos_in_homeLiveData = datasource.getProductosList()
+class HomeViewModel : ViewModel() {
+    val firestoreService = FirebaseServices.FirestoreService()
+    var listProducts : MutableLiveData<List<Producto>> = MutableLiveData()
+    var isLoading = MutableLiveData<Boolean>()
 
-    class HomeViewModelFactory(private val context:Context):ViewModelProvider.Factory{
-
-        override fun <T : ViewModel> create(modelClass: Class<T>): T {
-            if(modelClass.isAssignableFrom(HomeViewModel::class.java)){
-                @Suppress("UNCHEKED_CAST")
-                return HomeViewModel(
-                    datasource = ProductosDataSource.getProductosDataSource(context.resources)
-                ) as T
+    fun refresh(){
+        getProductsFromFirebase()
+    }
+    fun getProductsFromFirebase(){
+        firestoreService.getProductos(object : CallbackProductos<List<Producto>>{
+            override fun onSuccessProductos(resultProductos : List<Producto>?) {
+                listProducts.postValue(resultProductos!!)
+                processFinished()
             }
-            throw IllegalArgumentException("Unknonw ViewModel class")
-        }
+
+            override fun onFailed(exception: Exception) {
+                processFinished()
+            }
+        })
+    }
+    fun processFinished(){
+        isLoading.value=true
     }
 }

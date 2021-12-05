@@ -14,7 +14,7 @@
             android:icon="@drawable/ic_baseline_settings_36"/>
         <item
             android:id="@+id/mapsFragment"
-            android:title="@string/maps_shops"
+            android:title="@string/maps_shop"
             android:icon="@drawable/ic_baseline_store_24"/>
     </group>
 

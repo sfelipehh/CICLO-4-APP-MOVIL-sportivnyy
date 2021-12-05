@@ -20,19 +20,25 @@
             android:layout_width="150dp"
             android:layout_height="220dp"
             android:background="@color/blue_cloud">
-
-            <ImageView
-                android:id="@+id/ivProducto_In_Home"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_marginTop="4dp"
-                android:src="@drawable/logo"
-                android:contentDescription="@string/nombre_producto"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image_contanier_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.466"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="4dp">
+            <ImageView
+                android:id="@+id/ivProducto_In_Home"
+                android:layout_width="@dimen/image_in_home_size"
+                android:layout_height="@dimen/image_in_home_size"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/imagen_producto"
 
+                />
+            </androidx.cardview.widget.CardView>
             <TextView
                 android:id="@+id/tvNombre_Producto_In_Home"
                 android:layout_width="120dp"
@@ -44,7 +50,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.466"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ivProducto_In_Home"/>
+                app:layout_constraintTop_toBottomOf="@+id/image_contanier_home"/>
 
             <TextView
                 android:id="@+id/tvPrecio_Producto_In_Home"

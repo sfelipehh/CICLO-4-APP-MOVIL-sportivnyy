@@ -8,4 +8,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="logo_background">#F6EDF0</color>
     <color name="blue_cloud">#dae7fc</color>
+    <color name="red">#D10D0D</color>
 </resources>

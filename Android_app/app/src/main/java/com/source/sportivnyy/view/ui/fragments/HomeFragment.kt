@@ -8,16 +8,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
+import androidx.lifecycle.Observer
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.DocumentReference
 import com.source.sportivnyy.databinding.HomeFragmentBinding
 import com.source.sportivnyy.R
 import com.source.sportivnyy.model.data.Producto
 import com.source.sportivnyy.view.ui.activities.DetailProductoActivity
 import com.source.sportivnyy.viewmodel.HomeViewModel
-const val PRODUCT_ID = "product id"
+const val PRODUCT_INFO = "producto_info"
+
 class HomeFragment : Fragment() {
 
     companion object {
@@ -44,36 +48,33 @@ class HomeFragment : Fragment() {
         val root:View = binding.root
         val recyclerView = binding.rvHome
         recyclerView.layoutManager = GridLayoutManager(root.context,2)
-        productosInHomeAdapter = HomeItemAdapter (
-            onClickView = {producto -> adapterOnClick(producto) }
-                )
-        recyclerView.adapter=productosInHomeAdapter
+
         return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(
-            this,HomeViewModel.HomeViewModelFactory(requireContext()))
+        viewModel = ViewModelProvider(this)
             .get(HomeViewModel::class.java)
-        viewModel.productos_in_homeLiveData.observe(viewLifecycleOwner,
-            {
-                it?.let{
-                    productosInHomeAdapter.submitList(it as MutableList<Producto>)
-            }
+        viewModel.refresh()
+        productosInHomeAdapter = HomeItemAdapter (
+            onClickView = {producto -> adapterOnClick(producto) }
+        )
+        binding.rvHome.apply { adapter=productosInHomeAdapter }
+        viewModel.listProducts.observe(viewLifecycleOwner,
+            Observer<List<Producto>>{
+                productos -> productosInHomeAdapter.updateData(productos)
             }
         )
+
     }
 
     private fun adapterOnClick(producto:Producto){
         val goToProductIntent = Intent(activity, DetailProductoActivity::class.java)
-        /*Toast.makeText(
-            context,
-            "Ha accedido a la vista detallada de un producto",
-            Toast.LENGTH_LONG
-        ).show()*/
-        goToProductIntent.putExtra(PRODUCT_ID,producto.id)
-        requireActivity().startActivity(goToProductIntent)
+            //"Ha accedido a la vista detallada de un producto"
+        val bundle = bundleOf(PRODUCT_INFO to producto)
+        goToProductIntent.putExtra(PRODUCT_INFO,bundle)
+        startActivity(goToProductIntent)
     }
 
     override fun onDestroyView() {

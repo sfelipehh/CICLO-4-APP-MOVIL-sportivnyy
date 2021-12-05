@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_in_detail_size">300dp</dimen>
+    <dimen name="image_author_comment_size">80dp</dimen>
+    <dimen name="image_in_home_size">120dp</dimen>
+    <dimen name="image_in_carrito_size">100dp</dimen>
+</resources>
