@@ -6,14 +6,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.source.sportivnyy.R
 import com.source.sportivnyy.model.data.Producto
+import com.squareup.picasso.Picasso
 
 class HomeItemAdapter(private val onClickView:(Producto)->Unit):
-    ListAdapter<Producto,HomeItemAdapter.ItemInHomeViewHolder>(ItemInHomeDiffCallback){
+    RecyclerView.Adapter<HomeItemAdapter.ItemInHomeViewHolder>(){
+
+    var listProducts = ArrayList<Producto>()
+
         class ItemInHomeViewHolder(itemView:View, val onClickView: (Producto) -> Unit):
                 RecyclerView.ViewHolder(itemView){
                     private val producto_in_home_ImageView:ImageView = itemView.findViewById(R.id.ivProducto_In_Home)
@@ -23,8 +25,8 @@ class HomeItemAdapter(private val onClickView:(Producto)->Unit):
                     init {
                         itemView.setOnClickListener {
                             current_producto?.let{
-                                onClickView(it)
-                            }
+                                    onClickView(it)
+                        }
                         }
                     }
                     @SuppressLint("SetTextI18n")
@@ -32,11 +34,10 @@ class HomeItemAdapter(private val onClickView:(Producto)->Unit):
                         current_producto=item
                         producto_in_home_NombreView.text=item.name
                         producto_in_home_PrecioView.text="${item.precio.toString()}$"
-                        if(item.image !=null){
-                            //TODO.Not yet implemented
-                            producto_in_home_ImageView.setImageResource(R.drawable.ic_baseline_shopping_bag_48)
-                        }else{
-                            producto_in_home_ImageView.setImageResource(R.drawable.ic_baseline_shopping_bag_48)
+                        //R.dimen.image_in_home_size=120dp /120px
+                        if(item.imgurl != "ninguna") {
+                            Picasso.get().load(item.imgurl).resize(120, 120)
+                                .into(producto_in_home_ImageView)
                         }
 
                     }
@@ -49,17 +50,16 @@ class HomeItemAdapter(private val onClickView:(Producto)->Unit):
     }
 
     override fun onBindViewHolder(holder: ItemInHomeViewHolder, position: Int) {
-        val producto_in_home = getItem(position)
-        holder.bind(producto_in_home)
-    }
-    }
-
-object ItemInHomeDiffCallback:DiffUtil.ItemCallback<Producto>(){
-    override fun areItemsTheSame(oldItem: Producto, newItem: Producto): Boolean {
-        return oldItem==newItem
+        val producto = listProducts[position]
+        holder.bind(producto)
     }
 
-    override fun areContentsTheSame(oldItem: Producto, newItem: Producto): Boolean {
-        return oldItem.id == newItem.id
+    override fun getItemCount(): Int {
+        return listProducts.size
     }
-}
+    fun updateData(data:List<Producto>){
+        listProducts.clear()
+        listProducts.addAll(data)
+        notifyDataSetChanged()
+    }
+    }

@@ -52,6 +52,10 @@ class NavigationDrawer : AppCompatActivity() {
                 navController.navigate(R.id.to_shopping_cart)
                 true
             }
+            R.id.to_account->{
+                navController.navigate((R.id.to_account))
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

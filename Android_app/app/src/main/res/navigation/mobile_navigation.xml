@@ -7,21 +7,26 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.source.sportivnyy.view.ui.fragments.HomeFragment"
-        android:label="@string/menu_blank"
+        android:label="@string/menu_home"
         tools:layout="@layout/home_fragment"/>
     <fragment
         android:id="@+id/to_shopping_cart"
         android:name="com.source.sportivnyy.view.ui.fragments.shopping_cart.ShoppingCartFragment"
-        android:label="shopping_cart_fragment"
+        android:label="@string/title_shopping_cart"
         tools:layout="@layout/shopping_cart_fragment" />
+    <fragment
+        android:id="@+id/to_account"
+        android:name="com.source.sportivnyy.view.ui.fragments.AccountFragment"
+        android:label="@string/account_header"
+        tools:layout="@layout/account_fragment"/>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.source.sportivnyy.view.ui.fragments.settings.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:label="@string/settings" />
     <fragment
         android:id="@+id/mapsFragment"
         android:name="com.source.sportivnyy.view.ui.fragments.maps.MapsFragment"
-        android:label="fragment_maps"
+        android:label="@string/maps_shop"
         tools:layout="@layout/fragment_maps" />
 
 
